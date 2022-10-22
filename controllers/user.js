@@ -6,7 +6,7 @@ import sendGrid from "nodemailer-sendgrid-transport"
 //config mailer
 const transporter = nodemailer.createTransport(sendGrid({
   auth:{
-    api_key: "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"
+    api_key: process.env.API_KEY_SENDGRID
   }
 }))
 

@@ -10,6 +10,7 @@ const transporter = nodemailer.createTransport(sendGrid({
   }
 }))
 
+
 export const createUser = (req, res, next) => {
   const newUser = new User(req.body);
   newUser.save().then((result) => {
